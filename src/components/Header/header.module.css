@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #2a2c38;
+  font-family: sans-serif;
+}
+
+.topHeaderLeft {
+  flex: 1;
+  background-color: #c01c25;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 98% 0, 100% 100%, 0% 100%);
+}
+
+.topHeaderRight {
+  flex: 1;
+  background-color: #2a2c38;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.helpLine {
+  display: flex;
+  gap: 20px;
+}
+
+.headerBottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerBottomButton {
+  display: flex;
+  font-family: sans-serif;
+  background-color: #c01c25;
+  color: white;
+  padding: 15px 30px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.headerBottomContent {
+  display: flex;
+  gap: 30px;
+  padding-right: 140px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
