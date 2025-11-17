@@ -1,3 +1,4 @@
+"use client";
 import styles from "./header.module.css";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
@@ -6,9 +7,8 @@ import Facebook from "../Icons/Facebook";
 import XIcon from "@mui/icons-material/X";
 import Linkedin from "../Icons/Linkedin";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import BrandLogo from "@/components/Icons/BrandLogo.webp";
 import Image from "next/image";
-import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import Button from "../Common/Button/Button";
 
 const Header = () => {
   return (
@@ -56,7 +56,12 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.headerBottom}>
-        <Image src={BrandLogo} alt="BrandLogo" width={175} height={100} />
+        <Image
+          src={"/Images/BrandLogo.webp"}
+          alt="BrandLogo"
+          width={175}
+          height={100}
+        />
         <div className={styles.headerBottomContent}>
           <div>Home</div>
           <div>About</div>
@@ -65,14 +70,7 @@ const Header = () => {
           <div>Contact</div>
           <div>Arabic</div>
         </div>
-        <div className={styles.headerBottomButton}>
-          Get A Quote
-          <ArrowOutwardIcon
-            sx={{
-              fontSize: 18,
-            }}
-          />
-        </div>
+        <Button title={"Get A Quote"} />
       </div>
     </div>
   );
