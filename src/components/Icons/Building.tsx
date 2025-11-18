@@ -9,7 +9,7 @@ const Building = () => {
       width="18px"
       height="18px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
     >
       <path
         fill="#c01c25"

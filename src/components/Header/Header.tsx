@@ -70,7 +70,7 @@ const Header = () => {
           <div>Contact</div>
           <div>Arabic</div>
         </div>
-        <Button title={"Get A Quote"} />
+        <Button title={"Get A Quote"} darkHover={true} />
       </div>
     </div>
   );

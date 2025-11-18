@@ -94,6 +94,34 @@
   font-size: 16px;
 }
 
+.redContainer {
+  position: absolute;
+  left: -50px;
+  bottom: -50px;
+  width: 330px;
+  height: 130px;
+  background-color: #c01c25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.imageContainer {
+  position: absolute;
+
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  height: 70px;
+}
+
 @keyframes zoom {
   0% {
     transform: scale(1);

@@ -9,3 +9,13 @@
   font-weight: 600;
   width: fit-content;
 }
+
+.light:hover {
+  background-color: white;
+  color: black;
+}
+
+.dark:hover {
+  background-color: black;
+  color: white;
+}
