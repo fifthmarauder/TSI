@@ -37,38 +37,38 @@ const SpecializedInstallation = () => {
               height={580}
             />
             <div className={styles.redContainer}>
-              <div className={styles.imageWrapper}>
-                <Image
-                  className={styles.imageContainer}
-                  style={{ left: "0px" }}
-                  src={"/Images/Arab1.webp"}
-                  alt="image"
-                  width={74}
-                  height={74}
-                />
-                <Image
-                  className={styles.imageContainer}
-                  style={{ left: "40px" }}
-                  src={"/Images/Arab2.webp"}
-                  alt="image"
-                  width={74}
-                  height={74}
-                />
-                <Image
-                  className={styles.imageContainer}
-                  style={{ left: "80px" }}
-                  src={"/Images/Arab3.webp"}
-                  alt="image"
-                  width={74}
-                  height={74}
-                />
+              <div className={styles.contentWrapper}>
+                <div className={styles.imageWrapper}>
+                  <Image
+                    className={styles.imageContainer}
+                    style={{ left: "0px" }}
+                    src={"/Images/Arab1.webp"}
+                    alt="image"
+                    width={74}
+                    height={74}
+                  />
+                  <Image
+                    className={styles.imageContainer}
+                    style={{ left: "40px" }}
+                    src={"/Images/Arab2.webp"}
+                    alt="image"
+                    width={74}
+                    height={74}
+                  />
+                  <Image
+                    className={styles.imageContainer}
+                    style={{ left: "80px" }}
+                    src={"/Images/Arab3.webp"}
+                    alt="image"
+                    width={74}
+                    height={74}
+                  />
+                </div>
                 <div
                   style={{
                     color: "white",
                     fontFamily: "sans-serif",
                     fontWeight: "600",
-                    zIndex: "10",
-                    paddingLeft: "120px",
                   }}
                 >
                   20+ Daily Clients
