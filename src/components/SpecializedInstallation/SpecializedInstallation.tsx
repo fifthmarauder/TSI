@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Button from "../Common/Button/Button";
-import Building from "../Icons/Building";
 import styles from "./SpecializedInstallation.module.css";
-import { relative } from "path";
+import Headings from "../Common/Headings/Headings";
 
 const SpecializedInstallation = () => {
   return (
@@ -12,10 +11,7 @@ const SpecializedInstallation = () => {
       <div className={styles.overlay}></div>
       <div className={styles.container}>
         <div className={styles.leftContainer}>
-          <div className={styles.description}>
-            <Building />
-            SPECIALIZED INSTALLATION
-          </div>
+          <Headings text={"SPECIALIZED INSTALLATIONS"} />
           <div className={styles.heading}>Your Trusted Partner In</div>
           <div className={styles.heading} style={{ color: "#c01c25" }}>
             Glass & Timber Construction

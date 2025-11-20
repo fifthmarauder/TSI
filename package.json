@@ -9,9 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "d3-ease": "^3.0.1",
     "next": "16.0.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-circular-progressbar": "^2.2.0",
+    "react-dom": "19.2.0",
+    "react-move": "^6.5.0"
   },
   "devDependencies": {
     "@types/node": "^20",

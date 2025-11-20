@@ -1,0 +1,81 @@
+.main {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  color: #333;
+}
+
+.leftContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.leftContainerCard {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  height: 690px;
+  justify-content: space-between;
+}
+
+.heading {
+  font-family: sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: black;
+  line-height: 1.1em;
+}
+
+.paragraph {
+  color: rgb(119, 119, 119);
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin-bottom: 14px;
+}
+
+.rightContainerCard {
+  display: flex;
+  gap: 20px;
+}
+
+.cardHeading {
+  font-family: sans-serif;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.successWrapper {
+  border: 5px solid #c01c25;
+  padding: 35px 30px;
+}
+.successContainer {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  gap: 20px;
+}
+
+.successContainerTitle {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3em;
+  text-align: center;
+}

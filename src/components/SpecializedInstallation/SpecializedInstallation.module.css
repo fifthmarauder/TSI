@@ -60,21 +60,6 @@
   width: 550px;
 }
 
-.description {
-  border: 1px solid #c01c25;
-  width: 280px;
-  padding: 9px 18px;
-  font-size: 16px;
-  font-family: sans-serif;
-  display: flex;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  gap: 5px;
-  line-height: 18px;
-}
-
 .heading {
   color: white;
   font-size: 75px;
