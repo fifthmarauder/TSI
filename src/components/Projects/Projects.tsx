@@ -32,128 +32,46 @@ const Projects = () => {
         </div>
         <div className={styles.imageWrapper}>
           <div className={styles.imageRow}>
-            <div
-              className={styles.imageContainer}
-              onClick={() => {
-                setCurrentImage(0);
-                setVisible(true);
-              }}
-            >
-              <Image
-                className={styles.zoomImage}
-                src={"/Images/Project1.webp"}
-                alt="image"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div
-              className={styles.imageContainer}
-              onClick={() => {
-                setCurrentImage(1);
-                setVisible(true);
-              }}
-            >
-              <Image
-                className={styles.zoomImage}
-                src={"/Images/Project2.webp"}
-                alt="image"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div
-              className={styles.imageContainer}
-              onClick={() => {
-                setCurrentImage(2);
-                setVisible(true);
-              }}
-            >
-              <Image
-                className={styles.zoomImage}
-                src={"/Images/Pool.webp"}
-                alt="image"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div
-              className={styles.imageContainer}
-              onClick={() => {
-                setCurrentImage(3);
-                setVisible(true);
-              }}
-            >
-              <Image
-                className={styles.zoomImage}
-                src={"/Images/Project4.webp"}
-                alt="image"
-                height={300}
-                width={300}
-              />
-            </div>
+            {imageArray.slice(0, 4).map((data, key) => {
+              return (
+                <div
+                  className={styles.imageContainer}
+                  onClick={() => {
+                    setCurrentImage(key);
+                    setVisible(true);
+                  }}
+                >
+                  <Image
+                    className={styles.zoomImage}
+                    src={data.src}
+                    alt="image"
+                    height={300}
+                    width={300}
+                  />
+                </div>
+              );
+            })}
           </div>
-          <div
-            className={styles.imageRow}
-            onClick={() => {
-              setCurrentImage(4);
-              setVisible(true);
-            }}
-          >
-            <div className={styles.imageContainer}>
-              <Image
-                className={styles.zoomImage}
-                src={"/Images/Project5.webp"}
-                alt="image"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div
-              className={styles.imageContainer}
-              onClick={() => {
-                setCurrentImage(5);
-                setVisible(true);
-              }}
-            >
-              <Image
-                className={styles.zoomImage}
-                src={"/Images/Project6.webp"}
-                alt="image"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div
-              className={styles.imageContainer}
-              onClick={() => {
-                setCurrentImage(6);
-                setVisible(true);
-              }}
-            >
-              <Image
-                className={styles.zoomImage}
-                src={"/Images/Project7.webp"}
-                alt="image"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div
-              className={styles.imageContainer}
-              onClick={() => {
-                setCurrentImage(7);
-                setVisible(true);
-              }}
-            >
-              <Image
-                className={styles.zoomImage}
-                src={"/Images/Project8.webp"}
-                alt="image"
-                height={300}
-                width={300}
-              />
-            </div>
+          <div className={styles.imageRow}>
+            {imageArray.slice(4).map((data, key) => {
+              return (
+                <div
+                  className={styles.imageContainer}
+                  onClick={() => {
+                    setCurrentImage(key + 4);
+                    setVisible(true);
+                  }}
+                >
+                  <Image
+                    className={styles.zoomImage}
+                    src={data.src}
+                    alt="image"
+                    height={300}
+                    width={300}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
