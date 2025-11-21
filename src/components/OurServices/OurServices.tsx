@@ -6,6 +6,7 @@ import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import ProgressBar from "@/components/Common/ProgressBar/ProgressBar";
 import "react-circular-progressbar/dist/styles.css";
+import Card from "../Common/Card/Card";
 
 const OurServices = () => {
   return (
@@ -52,38 +53,20 @@ const OurServices = () => {
             and stand the test of time
           </div>
           <div className={styles.rightContainerCard}>
-            <div className={styles.card}>
-              <EmojiEventsOutlinedIcon
-                sx={{
-                  color: "#C01C25",
-                  fontSize: "60px",
-                }}
-              />
-              <div className={styles.cardHeading}>
-                Award-Winning Experts in Retractable Glass Systems
-              </div>
-              <div className={styles.paragraph}>
-                Trusted by architects, designers, and homeowners alike, we
-                deliver world-class retractable glass solutions that blend
-                precision engineering with unmatched style.
-              </div>
-            </div>
-            <div className={styles.card}>
-              <SettingsOutlinedIcon
-                sx={{
-                  color: "#C01C25",
-                  fontSize: "60px",
-                }}
-              />
-              <div className={styles.cardHeading}>
-                Innovative Design & Precision Engineering
-              </div>
-              <div className={styles.paragraph}>
-                Our retractable glass systems are crafted with cutting-edge
+            <Card
+              title="Award-Winning Experts in Retractable Glass Systems"
+              para="Trusted by architects, designers, and homeowners alike, we deliver
+        world-class retractable glass solutions that blend precision engineering
+        with unmatched style."
+              Icon={EmojiEventsOutlinedIcon}
+            />
+            <Card
+              title="Innovative Design & Precision Engineering"
+              para="Our retractable glass systems are crafted with cutting-edge
                 technology and engineered for flawless performance, delivering
-                both beauty and durability in every installation.
-              </div>
-            </div>
+                both beauty and durability in every installation."
+              Icon={SettingsOutlinedIcon}
+            />
           </div>
         </div>
       </div>
