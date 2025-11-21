@@ -1,6 +1,4 @@
 import styles from "./card.module.css";
-import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 
 const Card = ({
   title,

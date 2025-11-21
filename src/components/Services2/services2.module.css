@@ -1,50 +1,42 @@
 .main {
-  display: flex;
-  gap: 70px;
-  justify-content: center;
-  align-items: center;
-  height: 900px;
+  height: 800px;
   background-color: #f5f5f5;
-}
-
-.leftContainer {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
-.leftContainerCard {
+.leftContainer {
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 600px;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-family: sans-serif;
+  color: rgb(119, 119, 119);
+}
+
+.cardContainer {
+  display: flex;
+  gap: 20px;
 }
 
 .rightContainer {
   display: flex;
-  flex-direction: column;
-  width: 580px;
-  height: 690px;
-  justify-content: space-between;
-}
-
-.heading {
-  font-family: sans-serif;
-  font-size: 45px;
-  font-weight: 600;
-  color: black;
-  line-height: 1.1em;
-}
-
-.paragraph {
-  color: rgb(119, 119, 119);
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  margin-bottom: 14px;
-}
-
-.rightContainerCard {
-  display: flex;
   gap: 20px;
+  width: 600px;
 }
 
 .successWrapper {
@@ -66,4 +58,10 @@
   font-weight: 600;
   line-height: 1.3em;
   text-align: center;
+}
+
+.rightContainerCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
