@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Headings from "../Common/Headings/Headings";
-import styles from "./projects.module.css";
+import styles from "./projects2.module.css";
 import { useState } from "react";
 import Viewer from "react-viewer";
 
@@ -24,58 +24,73 @@ const Projects2 = () => {
         <div style={{ color: "#c01c25" }}>Projects Showcase</div>
       </div>
       <div className={styles.imageWrapper}>
+        <div className={styles.imagesContainer}>
+          <div className={styles.imageContainer}>
+            <Image
+              className={styles.zoomImage}
+              src="/Images/Bg1.webp"
+              alt="Image"
+              height={200}
+              width={300}
+              onClick={() => {
+                setCurrentImage(0);
+                setVisible(true);
+              }}
+            />
+          </div>
+          <div className={styles.imageContainer}>
+            <Image
+              className={styles.zoomImage}
+              src="/Images/Project9.webp"
+              alt="Image"
+              height={200}
+              width={300}
+              onClick={() => {
+                setCurrentImage(1);
+                setVisible(true);
+              }}
+            />
+          </div>
+        </div>
         <div className={styles.imageContainer}>
           <Image
-            src="/Images/Bg1.webp"
+            className={styles.zoomImage}
+            src="/Images/Project10.webp"
             alt="Image"
-            height={200}
+            height={230}
             width={300}
             onClick={() => {
-              setCurrentImage(0);
-              setVisible(true);
-            }}
-          />
-          <Image
-            src="/Images/Project9.webp"
-            alt="Image"
-            height={200}
-            width={300}
-            onClick={() => {
-              setCurrentImage(1);
+              setCurrentImage(2);
               setVisible(true);
             }}
           />
         </div>
-        <Image
-          src="/Images/Project10.webp"
-          alt="Image"
-          height={230}
-          width={300}
-          onClick={() => {
-            setCurrentImage(2);
-            setVisible(true);
-          }}
-        />
-        <Image
-          src="/Images/Project11.webp"
-          alt="Image"
-          height={420}
-          width={300}
-          onClick={() => {
-            setCurrentImage(3);
-            setVisible(true);
-          }}
-        />
-        <Image
-          src="/Images/Project12.webp"
-          alt="Image"
-          height={420}
-          width={300}
-          onClick={() => {
-            setCurrentImage(4);
-            setVisible(true);
-          }}
-        />
+        <div className={styles.imageContainer}>
+          <Image
+            className={styles.zoomImage}
+            src="/Images/Project11.webp"
+            alt="Image"
+            height={420}
+            width={300}
+            onClick={() => {
+              setCurrentImage(3);
+              setVisible(true);
+            }}
+          />
+        </div>
+        <div className={styles.imageContainer}>
+          <Image
+            className={styles.zoomImage}
+            src="/Images/Project12.webp"
+            alt="Image"
+            height={420}
+            width={300}
+            onClick={() => {
+              setCurrentImage(4);
+              setVisible(true);
+            }}
+          />
+        </div>
       </div>
       <Viewer
         visible={visible}

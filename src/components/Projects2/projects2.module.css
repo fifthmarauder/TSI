@@ -21,10 +21,23 @@
 .imageWrapper {
   display: flex;
   gap: 20px;
+  overflow: hidden;
 }
 
-.imageContainer {
+.imagesContainer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.zoomImage {
+  transition: transform 0.4s ease;
+}
+
+.zoomImage:hover {
+  transform: scale(1.1); /* zoom level */
+}
+.imageContainer {
+  overflow: hidden;
+  cursor: pointer;
 }
