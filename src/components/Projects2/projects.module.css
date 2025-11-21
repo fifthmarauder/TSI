@@ -1,0 +1,30 @@
+.main {
+  height: 665px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.heading {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imageWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
