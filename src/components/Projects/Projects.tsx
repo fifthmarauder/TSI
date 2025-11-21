@@ -35,6 +35,7 @@ const Projects = () => {
             {imageArray.slice(0, 4).map((data, key) => {
               return (
                 <div
+                  key={key}
                   className={styles.imageContainer}
                   onClick={() => {
                     setCurrentImage(key);
@@ -56,6 +57,7 @@ const Projects = () => {
             {imageArray.slice(4).map((data, key) => {
               return (
                 <div
+                  key={key}
                   className={styles.imageContainer}
                   onClick={() => {
                     setCurrentImage(key + 4);

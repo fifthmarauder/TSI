@@ -2,11 +2,11 @@
 import Image from "next/image";
 import styles from "./ourServices.module.css";
 import Headings from "../Common/Headings/Headings";
-import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import ProgressBar from "@/components/Common/ProgressBar/ProgressBar";
 import "react-circular-progressbar/dist/styles.css";
 import Card from "../Common/Card/Card";
+import Trophy from "../Icons/Trophy";
+import Settings from "../Icons/Settings";
 
 const OurServices = () => {
   return (
@@ -58,14 +58,14 @@ const OurServices = () => {
               para="Trusted by architects, designers, and homeowners alike, we deliver
         world-class retractable glass solutions that blend precision engineering
         with unmatched style."
-              Icon={EmojiEventsOutlinedIcon}
+              Icon={Trophy}
             />
             <Card
               title="Innovative Design & Precision Engineering"
               para="Our retractable glass systems are crafted with cutting-edge
                 technology and engineered for flawless performance, delivering
                 both beauty and durability in every installation."
-              Icon={SettingsOutlinedIcon}
+              Icon={Settings}
             />
           </div>
         </div>

@@ -1,11 +1,12 @@
 "use client";
 import Card from "../Common/Card/Card";
 import Headings from "../Common/Headings/Headings";
-import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+
 import styles from "./services2.module.css";
 import Image from "next/image";
 import ProgressBar from "../Common/ProgressBar/ProgressBar";
+import Trophy from "../Icons/Trophy";
+import Settings from "../Icons/Settings";
 
 const Services2 = () => {
   return (
@@ -25,12 +26,12 @@ const Services2 = () => {
           <Card
             title="Award-Winning Experts In Timber Structures"
             para="Recognized for innovation and quality, our timber structure solutions have earned the trust of clients and the praise of the construction industry."
-            Icon={EmojiEventsOutlinedIcon}
+            Icon={Trophy}
           />
           <Card
             title="Innovative Design & Precision Engineering"
             para="Every timber project is engineered with meticulous precision and designed to achieve both architectural elegance and long-lasting durability."
-            Icon={SettingsOutlinedIcon}
+            Icon={Settings}
           />
         </div>
       </div>
