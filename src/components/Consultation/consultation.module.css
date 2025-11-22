@@ -1,0 +1,48 @@
+.main {
+  position: relative;
+  height: 680px;
+}
+
+.intro {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 270px;
+}
+
+.container {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+}
+.heading {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 20px;
+  width: 560px;
+}
+
+.paragraph {
+  font-family: sans-serif;
+  color: #dfdfdf;
+  line-height: 1.6em;
+  display: flex;
+  text-align: right;
+}
+
+.rightIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  width: 620px;
+}
+
+.leftIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
