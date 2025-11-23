@@ -1,3 +1,4 @@
+import AboutUs from "@/components/AboutUs/AboutUs";
 import Choose from "@/components/Choose/Choose";
 import Consultation from "@/components/Consultation/Consultation";
 import Header from "@/components/Header/Header";
@@ -18,6 +19,7 @@ export default function Home() {
       <Projects2 />
       <Choose />
       <Consultation />
+      <AboutUs />
     </>
   );
 }
