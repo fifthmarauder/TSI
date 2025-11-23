@@ -6,6 +6,7 @@ import HandymanIcon from "@mui/icons-material/Handyman";
 import ArchitectureIcon from "@mui/icons-material/Architecture";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import LayersIcon from "@mui/icons-material/Layers";
+import WhyChooseUsCards from "../Common/WhyChooseUsCards/WhyChooseUsCards";
 
 const Choose = () => {
   return (
@@ -25,104 +26,46 @@ const Choose = () => {
         </div>
         <div className={styles.cardWrapper}>
           <div className={styles.cardRow}>
-            <div className={styles.card}>
-              <div className={styles.cardContainer}>
-                <ExtensionIcon
-                  sx={{
-                    color: "#C01C25",
-                    fontSize: "60px",
-                  }}
-                />
-                <div className={styles.cardHeading}>Custom-Fit Solutions</div>
-                <div className={styles.paragraph}>
-                  We don’t believe in one-size-fits-all. Every structure is
-                  custom-made to match your project’s exact dimensions for a
-                  seamless fit and finish.
-                </div>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <div className={styles.cardContainer}>
-                <LanguageIcon
-                  sx={{
-                    color: "#C01C25",
-                    fontSize: "60px",
-                  }}
-                />
-                <div className={styles.cardHeading}>Global-Grade Materials</div>
-                <div className={styles.paragraph}>
-                  We source our systems from internationally recognized
+            <WhyChooseUsCards
+              title="Custom-Fit Solutions"
+              paragraph="We don’t believe in one-size-fits-all. Every structure is custom-made to match your project’s exact dimensions for a seamless fit and finish."
+              Icon={ExtensionIcon}
+            />
+            <WhyChooseUsCards
+              title="Global-Grade Materials"
+              paragraph="We source our systems from internationally recognized
                   manufacturers, ensuring top-tier quality, innovation, and
-                  durability.
-                </div>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <div className={styles.cardContainer}>
-                <HandymanIcon
-                  sx={{
-                    color: "#C01C25",
-                    fontSize: "60px",
-                  }}
-                />
-                <div className={styles.cardHeading}>Expert Installation</div>
-                <div className={styles.paragraph}>
-                  Our experienced team handles on-site assembly with precision,
-                  following your architectural plans to the smallest detail.
-                </div>
-              </div>
-            </div>
+                  durability."
+              Icon={LanguageIcon}
+            />
+            <WhyChooseUsCards
+              title="Expert Installation"
+              paragraph="Our experienced team handles on-site assembly with precision,
+                  following your architectural plans to the smallest detail."
+              Icon={HandymanIcon}
+            />
           </div>
           <div className={styles.cardRow}>
-            <div className={styles.card}>
-              <div className={styles.cardContainer}>
-                <ArchitectureIcon
-                  sx={{
-                    color: "#C01C25",
-                    fontSize: "60px",
-                  }}
-                />
-                <div className={styles.cardHeading}>Elegant Design</div>
-                <div className={styles.paragraph}>
-                  We balance form and function — delivering systems that are not
-                  only durable but enhance the aesthetic of your space.
-                </div>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <div className={styles.cardContainer}>
-                <AccessTimeIcon
-                  sx={{
-                    color: "#C01C25",
-                    fontSize: "60px",
-                  }}
-                />
-                <div className={styles.cardHeading}>On-Time, Built to Last</div>
-                <div className={styles.paragraph}>
-                  We respect your schedule and your standards. Our installations
+            <WhyChooseUsCards
+              title="Elegant Design"
+              paragraph="We balance form and function — delivering systems that are not
+                  only durable but enhance the aesthetic of your space."
+              Icon={ArchitectureIcon}
+            />
+            <WhyChooseUsCards
+              title="On-Time, Built to Last"
+              paragraph="We respect your schedule and your standards. Our installations
                   are reliable, timely, and built to withstand time and the
-                  elements.
-                </div>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <div className={styles.cardContainer}>
-                <LayersIcon
-                  sx={{
-                    color: "#C01C25",
-                    fontSize: "60px",
-                  }}
-                />
-                <div className={styles.cardHeading}>
-                  Seamless Project Integration
-                </div>
-                <div className={styles.paragraph}>
-                  From initial consultation to final handover, we work closely
+                  elements."
+              Icon={AccessTimeIcon}
+            />
+            <WhyChooseUsCards
+              title="Seamless Project Integration"
+              paragraph="From initial consultation to final handover, we work closely
                   with architects, contractors, & clients to ensure smooth
-                  flawless integration into your existing structure.
-                </div>
-              </div>
-            </div>
+                  flawless integration into your existing structure."
+              Icon={LayersIcon}
+            />
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+"use client";
 import { easeQuadInOut } from "d3-ease";
 import AnimatedProgressProvider from "@/components/Common/AnimatedProgressProvider/AnimatedProgressProvider";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";

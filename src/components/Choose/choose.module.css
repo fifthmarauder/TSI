@@ -1,9 +1,7 @@
 .main {
   display: flex;
-
-  height: 1000px;
+  height: 800px;
   justify-content: center;
-  align-items: center;
 }
 
 .wrapper {
@@ -35,17 +33,6 @@
   align-items: center;
 }
 
-.card {
-  transition: border 0.3s ease, background-color 0.3s ease;
-  display: flex;
-  width: 400px;
-  height: 350px;
-  background-color: #f5f5f5;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 40px;
-}
-
 .cardWrapper {
   display: flex;
   flex-direction: column;
@@ -56,25 +43,4 @@
 .cardRow {
   display: flex;
   gap: 20px;
-}
-
-.cardContainer {
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.cardHeading {
-  font-family: sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.card:hover {
-  border: 1px solid #c01c25;
-  border-top: 5px solid #c01c25;
-  background-color: white;
-  --border-transition: 0.3s;
-  --background-transition: 0.3s;
 }

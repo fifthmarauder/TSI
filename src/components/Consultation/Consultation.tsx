@@ -2,6 +2,11 @@ import Image from "next/image";
 import Button from "../Common/Button/Button";
 import Headings from "../Common/Headings/Headings";
 import styles from "./consultation.module.css";
+import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
+import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
+import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOutlined";
+import TrendingUpOutlinedIcon from "@mui/icons-material/TrendingUpOutlined";
+import Counter from "../Common/CountUp/CountUp";
 
 const Consultation = () => {
   return (
@@ -43,6 +48,40 @@ const Consultation = () => {
                 underline={true}
                 darkHover={true}
               />
+            </div>
+          </div>
+          <div className={styles.redBox}>
+            <div className={styles.redBoxCard}>
+              <HandshakeOutlinedIcon
+                sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
+              />
+              <div className={styles.cardNumber}>
+                <Counter endNumber={253} />
+              </div>
+              <div className={styles.cardDescription}>Project Complete</div>
+            </div>
+            <div className={styles.redBoxCard}>
+              <GroupOutlinedIcon
+                sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
+              />
+              <Counter endNumber={839} />
+              <div className={styles.cardDescription}>Quality Team Member</div>
+            </div>
+            <div className={styles.redBoxCard}>
+              <WorkspacePremiumOutlinedIcon
+                sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
+              />
+              <Counter endNumber={42} />
+              <div className={styles.cardDescription}>Awards Winning</div>
+            </div>
+            <div className={styles.redBoxCard}>
+              <TrendingUpOutlinedIcon
+                sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
+              />
+
+              <Counter endNumber={38} />
+
+              <div className={styles.cardDescription}>Years Of Experience</div>
             </div>
           </div>
         </div>

@@ -1,0 +1,39 @@
+.card {
+  transition: border 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  width: 400px;
+  height: 350px;
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+  z-index: 10;
+}
+.cardContainer {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cardHeading {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card:hover {
+  border: 1px solid #c01c25;
+  border-top: 5px solid #c01c25;
+  background-color: white;
+  --border-transition: 0.3s;
+  --background-transition: 0.3s;
+}
+
+.paragraph {
+  font-family: sans-serif;
+  color: rgb(119, 119, 119);
+  line-height: 1.6em;
+  display: flex;
+  align-items: center;
+}

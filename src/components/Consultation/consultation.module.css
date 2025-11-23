@@ -1,6 +1,6 @@
 .main {
   position: relative;
-  height: 680px;
+  height: 771px;
 }
 
 .intro {
@@ -8,7 +8,7 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
-  padding-top: 270px;
+  padding-top: 250px;
 }
 
 .container {
@@ -45,4 +45,29 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.redBox {
+  height: 300px;
+  width: 1250px;
+  background-color: #c01c25;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.redBoxCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 270px;
+}
+
+.cardDescription {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: white;
 }
