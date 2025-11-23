@@ -1,0 +1,80 @@
+.main {
+  display: flex;
+  align-items: center;
+  height: 560px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container {
+  background-color: #c01c25;
+  width: 515px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.heading {
+  color: white;
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: white;
+  font-family: sans-serif;
+  line-height: 25.6px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 26px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.location {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 17px;
+  color: #dfdfdf;
+}
+
+.client {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.clientContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  width: 200%;
+  transition: transform 0.7s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 30px 0;
+}
