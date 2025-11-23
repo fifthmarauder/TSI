@@ -1,6 +1,7 @@
 import AboutUs from "@/components/AboutUs/AboutUs";
 import Choose from "@/components/Choose/Choose";
 import Consultation from "@/components/Consultation/Consultation";
+import FAQ from "@/components/FAQ/FAQ";
 import Header from "@/components/Header/Header";
 import OurServices from "@/components/OurServices/OurServices";
 import Projects from "@/components/Projects/Projects";
@@ -22,6 +23,7 @@ export default function Home() {
       <Consultation />
       <AboutUs />
       <SlidingText />
+      <FAQ />
     </>
   );
 }
