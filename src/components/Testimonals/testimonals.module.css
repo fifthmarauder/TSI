@@ -71,10 +71,10 @@
   display: flex;
   width: 200%;
   transition: transform 0.7s ease-in-out;
+  gap: 20px;
 }
 
 .slide {
-  width: 100%;
+  width: calc(50% - 10px);
   flex-shrink: 0;
-  padding: 30px 0;
 }
