@@ -6,6 +6,7 @@ import OurServices from "@/components/OurServices/OurServices";
 import Projects from "@/components/Projects/Projects";
 import Projects2 from "@/components/Projects2/Projects2";
 import Services2 from "@/components/Services2/Services2";
+import SlidingText from "@/components/SlidingText/SlidingText";
 import SpecializedInstallation from "@/components/SpecializedInstallation/SpecializedInstallation";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Choose />
       <Consultation />
       <AboutUs />
+      <SlidingText />
     </>
   );
 }
