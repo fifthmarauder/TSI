@@ -10,14 +10,24 @@ const SlidingText = () => {
           <Glass /> Retractable Glass Systems
         </div>
         <div className={styles.heading}>
-          {" "}
           <Helmet /> Timber Structures
         </div>
         <div className={styles.heading}>
           <Glass /> Retractable Glass Systems
         </div>
         <div className={styles.heading}>
-          {" "}
+          <Helmet /> Timber Structures
+        </div>
+        <div className={styles.heading}>
+          <Glass /> Retractable Glass Systems
+        </div>
+        <div className={styles.heading}>
+          <Helmet /> Timber Structures
+        </div>
+        <div className={styles.heading}>
+          <Glass /> Retractable Glass Systems
+        </div>
+        <div className={styles.heading}>
           <Helmet /> Timber Structures
         </div>
       </div>
