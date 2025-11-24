@@ -28,9 +28,9 @@ const Add = () => {
             <line
               fill="none"
               stroke="#c01c25"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               x1="5"
               x2="19"
               y1="12"
