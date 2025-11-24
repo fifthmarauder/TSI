@@ -40,13 +40,13 @@ const Header = () => {
             </div>
           </div>
           <div style={{ display: "flex", gap: "20px" }}>
-            <Facebook />
+            <Facebook width="18px" height="18px" color="white" />
             <XIcon
               sx={{
                 fontSize: 18,
               }}
             />
-            <Linkedin />
+            <Linkedin width="18px" height="18px" color="white" />
             <InstagramIcon
               sx={{
                 fontSize: 18,

@@ -1,10 +1,18 @@
 import React from "react";
 
-const Linkedin = () => {
+const Linkedin = ({
+  height,
+  width,
+  color,
+}: {
+  height: string;
+  width: string;
+  color: string;
+}) => {
   return (
     <svg
-      width="18px"
-      height="18px"
+      width={width}
+      height={height}
       viewBox="0 0 20 20"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +30,7 @@ const Linkedin = () => {
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-180.000000, -7479.000000)"
-          fill="#ffffffff"
+          fill={color}
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path

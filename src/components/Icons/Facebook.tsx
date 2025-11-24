@@ -1,11 +1,19 @@
 import React from "react";
 
-const Facebook = () => {
+const Facebook = ({
+  height,
+  width,
+  color,
+}: {
+  height: string;
+  width: string;
+  color: string;
+}) => {
   return (
     <svg
-      fill="#ffffffff"
-      height="18px"
-      width="18px"
+      fill={color}
+      height={height}
+      width={width}
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
