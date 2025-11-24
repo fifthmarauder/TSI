@@ -2,7 +2,7 @@
 import CountUp from "react-countup";
 import styles from "./countup.module.css";
 
-const Counter = ({ endNumber }) => {
+const Counter = ({ endNumber, suff }) => {
   return (
     <div className={styles.cardNumber}>
       <CountUp
@@ -10,7 +10,7 @@ const Counter = ({ endNumber }) => {
         end={endNumber}
         duration={5}
         delay={0}
-        suffix="+"
+        suffix={suff}
         enableScrollSpy
         scrollSpyDelay={0}
       >

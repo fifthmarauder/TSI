@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 530px;
+  align-items: center;
+  padding: 10px;
+}
+
+.heading {
+  color: black;
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight: 600;
+  display: flex;
+  line-height: 50px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(51, 51, 51);
+  font-family: sans-serif;
+}
+
+.redBox {
+  height: 360px;
+  width: 1250px;
+  background-color: #c01c25;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.redBoxCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 270px;
+}
+
+.cardDescription {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: white;
+}

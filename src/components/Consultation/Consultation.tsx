@@ -56,7 +56,7 @@ const Consultation = () => {
                 sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
               />
               <div className={styles.cardNumber}>
-                <Counter endNumber={253} />
+                <Counter endNumber={253} suff={"+"} />
               </div>
               <div className={styles.cardDescription}>Project Complete</div>
             </div>
@@ -64,14 +64,14 @@ const Consultation = () => {
               <GroupOutlinedIcon
                 sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
               />
-              <Counter endNumber={839} />
+              <Counter endNumber={839} suff={"+"} />
               <div className={styles.cardDescription}>Quality Team Member</div>
             </div>
             <div className={styles.redBoxCard}>
               <WorkspacePremiumOutlinedIcon
                 sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
               />
-              <Counter endNumber={42} />
+              <Counter endNumber={42} suff={"+"} />
               <div className={styles.cardDescription}>Awards Winning</div>
             </div>
             <div className={styles.redBoxCard}>
@@ -79,7 +79,7 @@ const Consultation = () => {
                 sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
               />
 
-              <Counter endNumber={38} />
+              <Counter endNumber={38} suff={"+"} />
 
               <div className={styles.cardDescription}>Years Of Experience</div>
             </div>

@@ -17,7 +17,11 @@ const ContactUs = () => {
         src={"/Images/Bgdots.webp"}
         alt="Images"
         fill
-        style={{ position: "absolute", zIndex: "1" }}
+        style={{
+          position: "absolute",
+          zIndex: "1",
+          filter: " brightness(1.5) opacity(0.3)",
+        }}
       />
       <div className={styles.leftContainer}>
         <Headings text="OURCONTACT" containerStyle={{ color: "black" }} />

@@ -11,6 +11,7 @@ import Services2 from "@/components/Services2/Services2";
 import SlidingText from "@/components/SlidingText/SlidingText";
 import SpecializedInstallation from "@/components/SpecializedInstallation/SpecializedInstallation";
 import Testimonals from "@/components/Testimonals/Testimonals";
+import Vision from "@/components/Vision/Vision";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <FAQ />
       <Testimonals />
       <ContactUs />
+      <Vision />
     </>
   );
 }
