@@ -26,21 +26,21 @@ const Vision = () => {
           <div className={styles.cardNumber}>
             <Counter endNumber={50} suff={"+"} />
           </div>
-          <div className={styles.cardDescription}>Project Complete</div>
+          <div className={styles.cardDescription}>Custom Installations</div>
         </div>
         <div className={styles.redBoxCard}>
           <BusAlertIcon
             sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
           />
           <Counter endNumber={100} suff={"%"} />
-          <div className={styles.cardDescription}>Quality Team Member</div>
+          <div className={styles.cardDescription}>Imported Systems</div>
         </div>
         <div className={styles.redBoxCard}>
           <EventAvailableIcon
             sx={{ color: "white", fontSize: "45px", marginBottom: "10px" }}
           />
           <Counter endNumber={99} suff={"%"} />
-          <div className={styles.cardDescription}>Awards Winning</div>
+          <div className={styles.cardDescription}>On-Time Project Delivery</div>
         </div>
         <div className={styles.redBoxCard}>
           <TrendingUpIcon

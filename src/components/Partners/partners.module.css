@@ -1,0 +1,78 @@
+.main {
+  height: 480px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.mainWrapper {
+  padding-top: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.imageContainer {
+  display: flex;
+  gap: 85px;
+}
+
+.heading {
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.leftContainer {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.redBox {
+  height: 170px;
+  width: 1250px;
+  background-color: #c01c25;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 70px;
+  position: relative;
+}
+
+.imageContainerRed {
+  border-radius: 36px;
+  border: 1px solid black;
+  position: absolute;
+}
+
+.headingRed {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
