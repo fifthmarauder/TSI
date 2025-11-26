@@ -16,6 +16,7 @@
   background-color: #c01c25;
   color: white;
   display: flex;
+
   justify-content: center;
   align-items: center;
   clip-path: polygon(0 0, 98% 0, 100% 100%, 0% 100%);

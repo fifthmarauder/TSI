@@ -1,9 +1,10 @@
 .main {
   display: flex;
   align-items: center;
-  height: 560px;
+
   justify-content: center;
   gap: 20px;
+  padding: 90px 0px;
 }
 
 .container {

@@ -1,8 +1,8 @@
 .main {
-  height: 550px;
   background-color: rgb(42, 44, 56);
   display: flex;
   justify-content: center;
+  padding: 20px 0px;
 }
 
 .wrapper {

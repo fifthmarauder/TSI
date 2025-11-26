@@ -1,10 +1,10 @@
 .main {
-  height: 665px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 80px 0px;
 }
 
 .heading {
