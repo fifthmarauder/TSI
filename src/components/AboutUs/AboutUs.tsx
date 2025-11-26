@@ -6,9 +6,9 @@ import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import CrisisAlertOutlinedIcon from "@mui/icons-material/CrisisAlertOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 
-const AboutUs = () => {
+const AboutUs = ({ ref }: { ref: any }) => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} ref={ref}>
       <div className={styles.container}>
         <div className={styles.leftContainer}>
           <Headings text="ABOUT US" containerStyle={{ color: "black" }} />

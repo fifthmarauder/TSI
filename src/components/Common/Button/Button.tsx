@@ -5,13 +5,16 @@ const Button = ({
   title,
   underline = false,
   darkHover = false,
+  clicked,
 }: {
   title: String;
   underline?: Boolean;
   darkHover?: Boolean;
+  clicked: () => void;
 }) => {
   return (
     <div
+      onClick={clicked}
       className={`${styles.button} ${darkHover ? styles.dark : styles.light}`}
       style={{ textDecoration: underline ? "underline" : "none" }}
     >

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Minus = () => {
   return (
     <svg
@@ -12,9 +10,9 @@ const Minus = () => {
       <path
         d="M6 12L18 12"
         stroke="#c01c25"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

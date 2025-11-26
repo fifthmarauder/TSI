@@ -8,10 +8,10 @@ import Card from "../Common/Card/Card";
 import Trophy from "../Icons/Trophy";
 import Settings from "../Icons/Settings";
 
-const OurServices = () => {
+const OurServices = ({ ref }: { ref: any }) => {
   return (
     <>
-      <div className={styles.main}>
+      <div className={styles.main} ref={ref}>
         <div className={styles.leftContainer}>
           <Image
             src={"/Images/ServiceBackground1.webp"}

@@ -37,6 +37,15 @@
   gap: 20px;
 }
 
+.helpLineContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.helpLineContainer:hover {
+  color: #c01c25;
+}
+
 .headerBottom {
   display: flex;
   justify-content: space-around;
@@ -50,4 +59,12 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
   font-weight: 500;
+}
+
+.headerButtons {
+}
+
+.headerButtons:hover {
+  color: rgb(112, 112, 112);
+  cursor: pointer;
 }

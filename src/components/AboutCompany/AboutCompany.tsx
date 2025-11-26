@@ -9,7 +9,7 @@ import Linkedin from "../Icons/Linkedin";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Image from "next/image";
 
-const AboutCompany = () => {
+const AboutCompany = ({ scroll }: { scroll: any }) => {
   return (
     <div className={styles.main}>
       <div className={styles.wrapper}>
@@ -42,31 +42,39 @@ const AboutCompany = () => {
             </div>
 
             <div
-              className={styles.paragraph}
-              style={{ display: "flex", paddingLeft: "130px" }}
+              className={styles.quickPara}
+              onClick={() => {
+                scroll("Home");
+              }}
             >
               <ArrowOutwardOutlinedIcon sx={{ color: "#c01c25" }} />
               Home
             </div>
             <div
-              className={styles.paragraph}
-              style={{ display: "flex", paddingLeft: "130px" }}
+              className={styles.quickPara}
+              onClick={() => {
+                scroll("Services");
+              }}
             >
               <ArrowOutwardOutlinedIcon sx={{ color: "#c01c25" }} /> Services
             </div>
             <div
-              className={styles.paragraph}
-              style={{ display: "flex", paddingLeft: "130px" }}
+              className={styles.quickPara}
+              onClick={() => {
+                scroll("Projects");
+              }}
             >
               <ArrowOutwardOutlinedIcon sx={{ color: "#c01c25" }} />
               Projects
             </div>
             <div
-              className={styles.paragraph}
-              style={{ display: "flex", paddingLeft: "130px" }}
+              className={styles.quickPara}
+              onClick={() => {
+                scroll("About");
+              }}
             >
               <ArrowOutwardOutlinedIcon sx={{ color: "#c01c25" }} />
-              Projects
+              About
             </div>
           </div>
           <div className={styles.container}>
@@ -120,19 +128,31 @@ const AboutCompany = () => {
             Nexus Tech
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-            <div className={styles.socials}>
+            <div
+              className={styles.socials}
+              onClick={() => window.open("https://facebook.com", "_blank")}
+            >
               <Facebook width="15px" height="15px" color="rgb(223, 223, 223)" />
               Facebook
             </div>
-            <div className={styles.socials}>
+            <div
+              className={styles.socials}
+              onClick={() => window.open("https://X.com", "_blank")}
+            >
               <XIcon sx={{ fontSize: "15px" }} />
               Twitter
             </div>
-            <div className={styles.socials}>
+            <div
+              className={styles.socials}
+              onClick={() => window.open("https://instagram.com", "_blank")}
+            >
               <InstagramIcon sx={{ fontSize: "15px" }} />
               Instagram
             </div>
-            <div className={styles.socials}>
+            <div
+              className={styles.socials}
+              onClick={() => window.open("https://linkedin.com", "_blank")}
+            >
               <Linkedin width="15px" height="15px" color="rgb(223, 223, 223)" />
               LinkedIn
             </div>

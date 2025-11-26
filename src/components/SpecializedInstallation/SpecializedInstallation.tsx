@@ -3,9 +3,15 @@ import Button from "../Common/Button/Button";
 import styles from "./SpecializedInstallation.module.css";
 import Headings from "../Common/Headings/Headings";
 
-const SpecializedInstallation = () => {
+const SpecializedInstallation = ({
+  scroll,
+  ref,
+}: {
+  scroll: any;
+  ref: any;
+}) => {
   return (
-    <div className={styles.slideshow}>
+    <div className={styles.slideshow} ref={ref}>
       <div className={`${styles.slide} ${styles.slide1}`}></div>
       <div className={`${styles.slide} ${styles.slide2}`}></div>
       <div className={styles.overlay}></div>
@@ -22,7 +28,13 @@ const SpecializedInstallation = () => {
             precision, reliability, and a commitment to turning your vision into
             reality.
           </div>
-          <Button title={"Explore Services"} underline={true} />
+          <Button
+            title={"Explore Services"}
+            underline={true}
+            clicked={() => {
+              scroll("Services");
+            }}
+          />
         </div>
         <div className={styles.rightContainer}>
           <div style={{ position: "relative" }}>

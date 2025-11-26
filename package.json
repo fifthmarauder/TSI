@@ -9,15 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "d3-ease": "^3.0.1",
     "next": "16.0.3",
     "react": "19.2.0",
     "react-circular-progressbar": "^2.2.0",
     "react-countup": "^6.5.3",
     "react-dom": "19.2.0",
-    "react-move": "^6.5.0",
-    "react-viewer": "^3.2.2",
-    "react-visibility-sensor": "^5.1.1"
+    "react-intersection-observer": "^10.0.0",
+    "react-viewer": "^3.2.2"
+   
   },
   "devDependencies": {
     "@types/node": "^20",

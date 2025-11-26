@@ -8,7 +8,7 @@ import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOu
 import TrendingUpOutlinedIcon from "@mui/icons-material/TrendingUpOutlined";
 import Counter from "../Common/CountUp/CountUp";
 
-const Consultation = () => {
+const Consultation = ({ scroll }: { scroll: any }) => {
   return (
     <div className={styles.main}>
       <Image
@@ -47,6 +47,9 @@ const Consultation = () => {
                 title={"Get Consultation"}
                 underline={true}
                 darkHover={true}
+                clicked={() => {
+                  scroll("Contact");
+                }}
               />
             </div>
           </div>

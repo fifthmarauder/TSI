@@ -26,11 +26,18 @@ const FAQCard = ({
           <Icon />
         </div>
       </div>
-      {isOpen && (
+      {/* {isOpen && (
         <div className={styles.slidingBox}>
           <div className={styles.paragraph}>{paragraph}</div>
         </div>
-      )}
+      )} */}
+      <div
+        className={`${styles.slidingBox} ${
+          isOpen ? styles.open : styles.closeInstant
+        }`}
+      >
+        <div className={styles.paragraph}>{paragraph}</div>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,5 @@
+"use client";
+
 import AboutCompany from "@/components/AboutCompany/AboutCompany";
 import AboutUs from "@/components/AboutUs/AboutUs";
 import Choose from "@/components/Choose/Choose";
@@ -14,26 +16,65 @@ import SlidingText from "@/components/SlidingText/SlidingText";
 import SpecializedInstallation from "@/components/SpecializedInstallation/SpecializedInstallation";
 import Testimonals from "@/components/Testimonals/Testimonals";
 import Vision from "@/components/Vision/Vision";
+import { useRef } from "react";
 
 export default function Home() {
+  const AboutRef = useRef<HTMLDivElement | null>(null);
+  const ServiceRef = useRef<HTMLDivElement | null>(null);
+  const ProjectsRef = useRef<HTMLDivElement | null>(null);
+  const ContactRef = useRef<HTMLDivElement | null>(null);
+  const HomeRef = useRef<HTMLDivElement | null>(null);
+  const setTarget = (Name: string) => {
+    if (Name == "Home") {
+      HomeRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    if (Name == "About") {
+      AboutRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    if (Name == "Services") {
+      ServiceRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    if (Name == "Projects") {
+      ProjectsRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    if (Name == "Contact") {
+      ContactRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <>
-      <Header />
-      <SpecializedInstallation />
-      <OurServices />
-      <Projects />
+      <Header scroll={setTarget} />
+      <SpecializedInstallation scroll={setTarget} ref={HomeRef} />
+      <OurServices ref={ServiceRef} />
+      <Projects ref={ProjectsRef} />
       <Services2 />
       <Projects2 />
       <Choose />
-      <Consultation />
-      <AboutUs />
+      <Consultation scroll={setTarget} />
+      <AboutUs ref={AboutRef} />
       <SlidingText />
       <FAQ />
       <Testimonals />
-      <ContactUs />
+      <ContactUs ref={ContactRef} />
       <Vision />
       <Partners />
-      <AboutCompany />
+      <AboutCompany scroll={setTarget} />
     </>
   );
 }

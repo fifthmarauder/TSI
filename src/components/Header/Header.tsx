@@ -9,8 +9,9 @@ import Linkedin from "../Icons/Linkedin";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Image from "next/image";
 import Button from "../Common/Button/Button";
+import Saudia from "../Icons/Saudia";
 
-const Header = () => {
+const Header = ({ scroll }: { scroll: any }) => {
   return (
     <div className={styles.main}>
       <div className={styles.topHeader}>
@@ -19,7 +20,7 @@ const Header = () => {
         </div>
         <div className={styles.topHeaderRight}>
           <div className={styles.helpLine}>
-            <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+            <div className={styles.helpLineContainer}>
               <EmailOutlinedIcon
                 sx={{
                   color: "#C01C25",
@@ -29,7 +30,7 @@ const Header = () => {
               info@tsi.na
             </div>
             <RemoveIcon sx={{ transform: "rotate(90deg)", color: "#C01C25" }} />
-            <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+            <div className={styles.helpLineContainer}>
               <LocalPhoneOutlinedIcon
                 sx={{
                   color: "#C01C25",
@@ -40,18 +41,26 @@ const Header = () => {
             </div>
           </div>
           <div style={{ display: "flex", gap: "20px" }}>
-            <Facebook width="18px" height="18px" color="white" />
-            <XIcon
-              sx={{
-                fontSize: 18,
-              }}
-            />
-            <Linkedin width="18px" height="18px" color="white" />
-            <InstagramIcon
-              sx={{
-                fontSize: 18,
-              }}
-            />
+            <a href="https://www.facebook.com">
+              <Facebook width="18px" height="18px" color="white" />
+            </a>
+            <a href="https://www.x.com">
+              <XIcon
+                sx={{
+                  fontSize: 18,
+                }}
+              />
+            </a>
+            <a href="https://www.linkedin.com">
+              <Linkedin width="18px" height="18px" color="white" />
+            </a>
+            <a href="https://www.instagram.com">
+              <InstagramIcon
+                sx={{
+                  fontSize: 18,
+                }}
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -63,14 +72,53 @@ const Header = () => {
           height={100}
         />
         <div className={styles.headerBottomContent}>
-          <div>Home</div>
-          <div>About</div>
-          <div>Services</div>
-          <div>Project</div>
-          <div>Contact</div>
-          <div>Arabic</div>
+          <div className={styles.headerButtons}>Home</div>
+          <div
+            className={styles.headerButtons}
+            onClick={() => {
+              scroll("About");
+            }}
+          >
+            About
+          </div>
+          <div
+            className={styles.headerButtons}
+            onClick={() => {
+              scroll("Services");
+            }}
+          >
+            Services
+          </div>
+          <div
+            className={styles.headerButtons}
+            onClick={() => {
+              scroll("Projects");
+            }}
+          >
+            Project
+          </div>
+          <div
+            className={styles.headerButtons}
+            onClick={() => {
+              scroll("Contact");
+            }}
+          >
+            Contact
+          </div>
+          <div
+            className={styles.headerButtons}
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <Saudia /> Arabic
+          </div>
         </div>
-        <Button title={"Get A Quote"} darkHover={true} />
+        <Button
+          title={"Get A Quote"}
+          darkHover={true}
+          clicked={() => {
+            scroll("Contact");
+          }}
+        />
       </div>
     </div>
   );

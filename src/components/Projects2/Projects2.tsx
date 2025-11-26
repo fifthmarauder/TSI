@@ -3,12 +3,11 @@ import Image from "next/image";
 import Headings from "../Common/Headings/Headings";
 import styles from "./projects2.module.css";
 import { useState } from "react";
-import Viewer from "react-viewer";
-
+import dynamic from "next/dynamic";
 const Projects2 = () => {
   const [visible, setVisible] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
-
+  const Viewer = dynamic(() => import("react-viewer"), { ssr: false });
   const imageArray = [
     { src: "/Images/Bg1.webp", alt: "image" },
     { src: "/Images/Project9.webp", alt: "image" },

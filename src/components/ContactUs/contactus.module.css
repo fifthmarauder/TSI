@@ -78,6 +78,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  z-index: 3;
 }
 
 .redContainer {
@@ -110,4 +111,18 @@
 .borderLine {
   border-bottom: 2px solid white;
   width: 90%;
+}
+
+.flagBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid rgb(195, 194, 194);
+  height: 80px;
+  width: 575px;
+  gap: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
 }

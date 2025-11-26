@@ -3,9 +3,10 @@
 import Image from "next/image";
 import Headings from "../Common/Headings/Headings";
 import styles from "./projects.module.css";
-import Viewer from "react-viewer";
 import { useState } from "react";
-const Projects = () => {
+import dynamic from "next/dynamic";
+const Projects = ({ ref }: { ref: any }) => {
+  const Viewer = dynamic(() => import("react-viewer"), { ssr: false });
   const [visible, setVisible] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const imageArray = [
@@ -20,7 +21,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className={styles.main}>
+    <div className={styles.main} ref={ref}>
       <div className={styles.mainWrapper}>
         <Headings
           text={"OUR PROJECTS"}

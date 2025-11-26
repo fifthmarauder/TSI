@@ -3,16 +3,25 @@ import styles from "./contactus.module.css";
 import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
 import Headings from "../Common/Headings/Headings";
 import Image from "next/image";
-import { useState } from "react";
-
-const ContactUs = () => {
+import { use, useEffect, useState } from "react";
+import Button from "../Common/Button/Button";
+import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
+const ContactUs = ({ ref }: { ref: any }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [number, setNumber] = useState<string | number>("");
   const [message, setMessage] = useState("");
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  useEffect(() => {
+    if (formSubmitted) {
+      setTimeout(() => {
+        setFormSubmitted(false);
+      }, 4000);
+    }
+  }, [formSubmitted]);
   return (
-    <div className={styles.main}>
+    <div className={styles.main} ref={ref}>
       <Image
         src={"/Images/Bgdots.webp"}
         alt="Images"
@@ -29,6 +38,12 @@ const ContactUs = () => {
           Let's Discuss Your Next{" "}
           <div style={{ color: "#c01c25" }}>Project</div>
         </div>
+        {formSubmitted && (
+          <div className={styles.flagBox}>
+            <CheckOutlinedIcon />
+            Thankyou! Form Submitted Successfully!
+          </div>
+        )}
         <form className={styles.formWrapper}>
           <div className={styles.formContainer}>
             <input
@@ -79,6 +94,18 @@ const ContactUs = () => {
             placeholder="Message"
           />
         </form>
+        <Button
+          title={"ENQUIRE NOW"}
+          darkHover={true}
+          clicked={() => {
+            setFormSubmitted(true);
+            setEmail("");
+            setMessage("");
+            setName("");
+            setNumber("");
+            setSubject("");
+          }}
+        />
       </div>
       <div className={styles.rightContainer}>
         <Image
