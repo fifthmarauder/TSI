@@ -63,11 +63,11 @@ export default function Home() {
       <SpecializedInstallation scroll={setTarget} ref={HomeRef} />
       <OurServices ref={ServiceRef} />
       <Projects ref={ProjectsRef} />
-      {/* <Services2 />
+      <Services2 />
       <Projects2 />
       <Choose />
       <Consultation scroll={setTarget} />
-      <AboutUs ref={AboutRef} />
+      {/*<AboutUs ref={AboutRef} />
       <SlidingText />
       <FAQ />
       <Testimonals />

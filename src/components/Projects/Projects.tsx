@@ -29,7 +29,7 @@ const Projects = ({ ref }: { ref: any }) => {
         />
         <div className={styles.heading}>
           Our Retractable Glass&nbsp;
-          <div style={{ color: "#c01c25" }}> Projects Showcase</div>
+          <span style={{ color: "#c01c25" }}> Projects Showcase</span>
         </div>
         <div className={styles.imageWrapper}>
           <div className={styles.imageRow}>

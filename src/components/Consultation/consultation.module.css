@@ -16,6 +16,14 @@
   position: absolute;
   width: 100%;
 }
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
 .heading {
   font-size: 45px;
   font-weight: 600;
@@ -70,4 +78,52 @@
   font-weight: 600;
   font-family: sans-serif;
   color: white;
+}
+
+@media only screen and (max-width: 768) {
+  .main {
+    height: 1300px;
+  }
+
+  .image {
+    height: 730px !important;
+    object-fit: cover !important;
+  }
+  .intro {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .heading {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .rightIntro {
+    width: 100%;
+    align-items: center;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+
+  .leftIntro {
+    align-items: center;
+  }
+
+  .redBox {
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 50px;
+  }
+
+  .redBoxCard {
+    width: 80%;
+    align-items: center;
+  }
 }

@@ -48,12 +48,15 @@
 
 @media only screen and (max-width: 768px) {
   .heading {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .imageRow {
-    display: inline;
+    flex-direction: column;
   }
-  .imageContainer {
+
+  .zoomImage {
+    width: 410px;
+    height: 410px;
   }
 }

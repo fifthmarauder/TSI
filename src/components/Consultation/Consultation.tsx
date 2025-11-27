@@ -16,17 +16,10 @@ const Consultation = ({ scroll }: { scroll: any }) => {
         alt="Image"
         fill
         style={{ zIndex: "1", position: "absolute", filter: "brightness(0.3)" }}
+        className={styles.image}
       />
       <div className={styles.container}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "40px",
-          }}
-        >
+        <div className={styles.innerContainer}>
           <div className={styles.intro}>
             <div className={styles.leftIntro}>
               <Headings text="GET CONSULTATION" />

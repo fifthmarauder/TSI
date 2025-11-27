@@ -41,6 +41,7 @@ const Services2 = () => {
           alt="Image"
           height={550}
           width={350}
+          className={styles.firstImage}
         />
         <div className={styles.rightContainerCard}>
           <Image
@@ -48,6 +49,7 @@ const Services2 = () => {
             alt="Image"
             height={268}
             width={232}
+            className={styles.secondImage}
           />
           <div className={styles.successWrapper}>
             <div className={styles.successContainer}>

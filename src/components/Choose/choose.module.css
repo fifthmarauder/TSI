@@ -31,6 +31,7 @@
   line-height: 1.6em;
   display: flex;
   align-items: center;
+  text-align: right;
 }
 
 .cardWrapper {
@@ -43,4 +44,37 @@
 .cardRow {
   display: flex;
   gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    height: 2000px;
+    flex-direction: column;
+    padding: 50px 20px;
+    justify-content: start;
+  }
+
+  .wrapper {
+    width: 100%;
+    align-items: center;
+  }
+
+  .intro {
+    flex-direction: column;
+    height: 250px;
+  }
+
+  .heading {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+  .cardRow {
+    flex-direction: column;
+    align-items: center;
+  }
 }

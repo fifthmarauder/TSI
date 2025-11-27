@@ -18,7 +18,7 @@ const Choose = () => {
             We Are Experts In Construction&nbsp;
             <span style={{ color: "#c01c25" }}>Services</span>
           </div>
-          <div className={styles.paragraph} style={{ textAlign: "right" }}>
+          <div className={styles.paragraph}>
             We craft timber structures that blend timeless craftsmanship with
             modern engineering, delivering strength, beauty, and sustainability
             in every project.

@@ -41,3 +41,18 @@
   overflow: hidden;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 20px;
+  }
+
+  .imageWrapper {
+    flex-direction: column;
+  }
+
+  .zoomImage {
+    width: 410px;
+    height: 410px;
+  }
+}

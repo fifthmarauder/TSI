@@ -8,10 +8,9 @@
 }
 
 .leftContainer {
-  height: 550px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 25px;
   width: 600px;
 }
 
@@ -26,6 +25,7 @@
 .paragraph {
   font-family: sans-serif;
   color: rgb(119, 119, 119);
+  line-height: 1.6em;
 }
 
 .cardContainer {
@@ -64,4 +64,54 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+
+  .leftContainer {
+    align-items: center;
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+  }
+
+  .firstImage {
+    width: 390px;
+    height: 430px;
+  }
+  .rightContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightContainerCard {
+    flex-direction: row;
+  }
+
+  .secondImage {
+    width: 180px;
+    height: 300px;
+  }
+
+  .successContainer {
+    width: 180px;
+  }
+  .successWrapper {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
 }
