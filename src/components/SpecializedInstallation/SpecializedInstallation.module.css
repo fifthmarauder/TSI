@@ -154,3 +154,51 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .leftContainer {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .heading {
+    font-size: 25px;
+    text-align: center;
+  }
+  .line {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .para {
+    text-align: center;
+  }
+
+  .poolImage {
+    width: 390px;
+    height: 382px;
+  }
+
+  .rightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .redContainer {
+    left: 30;
+    bottom: -80;
+  }
+
+  .leftContainer {
+    width: 390px;
+  }
+}

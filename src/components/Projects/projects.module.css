@@ -45,3 +45,15 @@
 .zoomImage:hover {
   transform: scale(1.1); /* zoom level */
 }
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 25px;
+  }
+
+  .imageRow {
+    display: inline;
+  }
+  .imageContainer {
+  }
+}

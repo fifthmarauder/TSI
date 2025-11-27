@@ -3,7 +3,6 @@
   gap: 70px;
   justify-content: center;
   align-items: center;
-  /* height: 900px; */
   background-color: #f5f5f5;
   padding: 100px 0px;
 }
@@ -22,9 +21,9 @@
 .rightContainer {
   display: flex;
   flex-direction: column;
-  width: 580px;
-  height: 690px;
-  justify-content: space-between;
+  width: 530px;
+
+  gap: 20px;
 }
 
 .heading {
@@ -33,8 +32,12 @@
   font-weight: 600;
   color: black;
   line-height: 1.1em;
+  margin-bottom: 20px;
 }
 
+.heading span {
+  display: block;
+}
 .paragraph {
   color: rgb(119, 119, 119);
   font-family: sans-serif;
@@ -67,4 +70,66 @@
   font-weight: 600;
   line-height: 1.3em;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 50px 20px;
+  }
+
+  .rightContainer {
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+  }
+
+  .heading {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .heading span {
+    display: inline;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+
+  .rightContainerCard {
+    flex-direction: column;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .leftContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainImage {
+    width: 390px;
+    height: 430px;
+  }
+
+  .successContainer {
+    width: 180px;
+  }
+
+  .successWrapper {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .leftContainerCard {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .secondImage {
+    width: 180px;
+  }
 }

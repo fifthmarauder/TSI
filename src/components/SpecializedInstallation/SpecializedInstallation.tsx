@@ -17,11 +17,14 @@ const SpecializedInstallation = ({
       <div className={styles.overlay}></div>
       <div className={styles.container}>
         <div className={styles.leftContainer}>
-          <Headings text={"SPECIALIZED INSTALLATIONS"} />
-          <div className={styles.heading}>Your Trusted Partner In</div>
-          <div className={styles.heading} style={{ color: "#c01c25" }}>
-            Glass & Timber Construction
+          <Headings text={"SPECIALIZED INSTALLATION"} />
+          <div className={styles.heading}>
+            Your Trusted Partner In
+            <div style={{ color: "#c01c25" }}>
+              Glass & Timber Construction
+            </div>{" "}
           </div>
+
           <div className={styles.line}></div>
           <div className={styles.para}>
             Delivering exceptional construction and building solutions with
@@ -43,6 +46,7 @@ const SpecializedInstallation = ({
               alt="image"
               width={550}
               height={580}
+              className={styles.poolImage}
             />
             <div className={styles.redContainer}>
               <div className={styles.contentWrapper}>

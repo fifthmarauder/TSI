@@ -59,11 +59,11 @@ export default function Home() {
 
   return (
     <>
-      <Header scroll={setTarget} />
+      {/* <Header scroll={setTarget} /> */}
       <SpecializedInstallation scroll={setTarget} ref={HomeRef} />
       <OurServices ref={ServiceRef} />
       <Projects ref={ProjectsRef} />
-      <Services2 />
+      {/* <Services2 />
       <Projects2 />
       <Choose />
       <Consultation scroll={setTarget} />
@@ -74,7 +74,7 @@ export default function Home() {
       <ContactUs ref={ContactRef} />
       <Vision />
       <Partners />
-      <AboutCompany scroll={setTarget} />
+      <AboutCompany scroll={setTarget} /> */}
     </>
   );
 }

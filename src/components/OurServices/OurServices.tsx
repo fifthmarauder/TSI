@@ -18,6 +18,7 @@ const OurServices = ({ ref }: { ref: any }) => {
             alt="Image"
             width={350}
             height={687}
+            className={styles.mainImage}
           />
           <div className={styles.leftContainerCard}>
             <Image
@@ -25,6 +26,7 @@ const OurServices = ({ ref }: { ref: any }) => {
               alt="Image"
               width={230}
               height={290}
+              className={styles.secondImage}
             />
             <div className={styles.successWrapper}>
               <div className={styles.successContainer}>
@@ -38,15 +40,14 @@ const OurServices = ({ ref }: { ref: any }) => {
         </div>
         <div className={styles.rightContainer}>
           <Headings text={"OUR SERVICES"} containerStyle={{ color: "black" }} />
-          <div style={{ width: "530px" }}>
-            <div className={styles.heading}>Our Excellence In</div>
-            <div
-              className={styles.heading}
-              style={{ color: "rgb(192, 28, 37)", marginBottom: "20px" }}
-            >
+
+          <div className={styles.heading}>
+            Our Excellence In&nbsp;
+            <span style={{ color: "rgb(192, 28, 37)" }}>
               Retractable Glass Systems
-            </div>
+            </span>
           </div>
+
           <div className={styles.paragraph}>
             We combine cutting-edge engineering with elegant design to deliver
             retractable glass systems that transform spaces, maximize comfort,
