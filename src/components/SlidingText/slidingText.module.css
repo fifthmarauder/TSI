@@ -35,3 +35,13 @@
     transform: translateX(-50%);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 25px;
+  }
+
+  .marquee {
+    width: fit-content;
+  }
+}

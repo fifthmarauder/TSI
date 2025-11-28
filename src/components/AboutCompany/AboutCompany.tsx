@@ -127,7 +127,7 @@ const AboutCompany = ({ scroll }: { scroll: any }) => {
             Copyright@2025 Tulay Specialized Installation. Developed by Web
             Nexus Tech
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          <div className={styles.socialsContainer}>
             <div
               className={styles.socials}
               onClick={() => window.open("https://facebook.com", "_blank")}

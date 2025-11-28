@@ -36,7 +36,7 @@ const ContactUs = ({ ref }: { ref: any }) => {
         <Headings text="OURCONTACT" containerStyle={{ color: "black" }} />
         <div className={styles.heading}>
           Let's Discuss Your Next{" "}
-          <div style={{ color: "#c01c25" }}>Project</div>
+          <span style={{ color: "#c01c25" }}>Project</span>
         </div>
         {formSubmitted && (
           <div className={styles.flagBox}>
@@ -113,6 +113,7 @@ const ContactUs = ({ ref }: { ref: any }) => {
           alt="Image"
           width={570}
           height={380}
+          className={styles.image}
         />
         <div className={styles.redContainer}>
           <div className={styles.redContainerWrapper}>

@@ -34,6 +34,13 @@
   gap: 20px;
 }
 
+.descriptionSecondBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 35px;
+}
+
 .descriptionHeading {
   font-size: 20px;
   font-weight: 600;
@@ -63,4 +70,38 @@
   flex-direction: column;
   gap: 20px;
   padding: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 100px 30px;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .leftContainer {
+    width: 100%;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+  .descriptionBox {
+    justify-content: center;
+  }
+
+  .rightContainer {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  .descriptionSecondBox {
+    flex-direction: column;
+    border-bottom: 1px solid #2a2c383b;
+  }
 }

@@ -55,32 +55,36 @@ const FAQ = () => {
         </div>
       </div>
       <div className={styles.rightContainer}>
-        <div className={styles.imageContainer} style={{ top: 0, left: 0 }}>
+        <div className={styles.imageContainer1}>
           <Image
             src={"/Images/Project8.webp"}
             alt="Image"
             width={340}
             height={340}
+            className={styles.firstImage}
           />
           <Image
             src={"/Images/Project11.webp"}
             alt="Image"
             width={170}
             height={170}
+            className={styles.secondImage}
           />
         </div>
-        <div className={styles.imageContainer} style={{ bottom: 0, right: 0 }}>
+        <div className={styles.imageContainer2}>
           <Image
             src={"/Images/Project10.webp"}
             alt="Image"
             width={170}
             height={170}
+            className={styles.secondImage}
           />
           <Image
             src={"/Images/Pool.webp"}
             alt="Image"
             width={340}
             height={340}
+            className={styles.firstImage}
           />
         </div>
       </div>

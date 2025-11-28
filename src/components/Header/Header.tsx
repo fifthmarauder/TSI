@@ -10,6 +10,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import Image from "next/image";
 import Button from "../Common/Button/Button";
 import Saudia from "../Icons/Saudia";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 const Header = ({ scroll }: { scroll: any }) => {
   return (
@@ -71,6 +72,16 @@ const Header = ({ scroll }: { scroll: any }) => {
           width={175}
           height={100}
         />
+
+        <div className={styles.mobileButton}>
+          <MenuOutlinedIcon
+            sx={{
+              color: "white",
+              fontSize: "50px",
+              backgroundColor: "#c01c25",
+            }}
+          />
+        </div>
         <div className={styles.headerBottomContent}>
           <div className={styles.headerButtons}>Home</div>
           <div
@@ -112,13 +123,15 @@ const Header = ({ scroll }: { scroll: any }) => {
             <Saudia /> Arabic
           </div>
         </div>
-        <Button
-          title={"Get A Quote"}
-          darkHover={true}
-          clicked={() => {
-            scroll("Contact");
-          }}
-        />
+        <div className={styles.button}>
+          <Button
+            title={"Get A Quote"}
+            darkHover={true}
+            clicked={() => {
+              scroll("Contact");
+            }}
+          />
+        </div>
       </div>
     </div>
   );

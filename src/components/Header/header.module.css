@@ -10,7 +10,9 @@
   background-color: #2a2c38;
   font-family: sans-serif;
 }
-
+.mobileButton {
+  display: none;
+}
 .topHeaderLeft {
   flex: 1;
   background-color: #c01c25;
@@ -62,10 +64,31 @@
   font-weight: 500;
 }
 
-.headerButtons {
-}
-
 .headerButtons:hover {
   color: rgb(112, 112, 112);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .topHeader {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .headerBottomContent {
+    display: none;
+  }
+  .mobileButton {
+    display: flex;
+  }
+
+  .headerBottom {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0px 10px 0px 10px;
+  }
 }

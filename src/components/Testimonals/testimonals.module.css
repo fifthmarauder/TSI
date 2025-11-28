@@ -79,3 +79,19 @@
   width: calc(50% - 10px);
   flex-shrink: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 25px;
+  }
+}

@@ -48,10 +48,10 @@
 
 @media only screen and (max-width: 768px) {
   .main {
-    height: 2000px;
-    flex-direction: column;
+    display: block;
+    height: 2300px;
     padding: 50px 20px;
-    justify-content: start;
+    overflow: visible;
   }
 
   .wrapper {
@@ -61,7 +61,6 @@
 
   .intro {
     flex-direction: column;
-    height: 250px;
   }
 
   .heading {

@@ -56,10 +56,7 @@ const AboutUs = ({ ref }: { ref: any }) => {
           </div>
         </div>
         <div className={styles.rightContainer}>
-          <div
-            className={styles.descriptionBox}
-            style={{ padding: "25px 35px" }}
-          >
+          <div className={styles.descriptionSecondBox}>
             <RemoveRedEyeOutlinedIcon
               sx={{
                 color: "#c01c25",
@@ -77,10 +74,7 @@ const AboutUs = ({ ref }: { ref: any }) => {
               </div>
             </div>
           </div>
-          <div
-            className={styles.descriptionBox}
-            style={{ padding: "25px 35px" }}
-          >
+          <div className={styles.descriptionSecondBox}>
             <CrisisAlertOutlinedIcon
               sx={{
                 color: "#c01c25",
@@ -98,10 +92,7 @@ const AboutUs = ({ ref }: { ref: any }) => {
               </div>
             </div>
           </div>
-          <div
-            className={styles.descriptionBox}
-            style={{ padding: "25px 35px" }}
-          >
+          <div className={styles.descriptionSecondBox}>
             <FlagOutlinedIcon
               sx={{
                 color: "#c01c25",
